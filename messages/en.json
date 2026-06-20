@@ -1,0 +1,8 @@
+{
+  "nav": { "home": "Home", "about": "About", "projects": "Projects", "research": "Research", "contact": "Contact", "talk": "Let's Talk" },
+  "hero": { "badge": "Available for freelance", "greeting": "Hi, I'm", "title": "AI & Backend Engineer", "subtitle": "Building intelligent systems at the intersection of AI, scalable architecture, and real-world impact.", "cta_primary": "View Projects", "cta_secondary": "Download CV" },
+  "about": { "label": "About me", "title": "Multi-disciplinary engineer for global impact", "description": "I combine software engineering, artificial intelligence, research writing, and financial market thinking. Currently building Conformis — an automated EU AI Act compliance platform.", "location": "Istanbul, Türkiye", "experience": "5+ Years", "projects_count": "10+ Projects", "papers": "3 Papers" },
+  "projects": { "label": "Selected work", "title": "Projects & Systems", "live": "Live demo", "code": "Source code" },
+  "research": { "label": "Publications", "title": "Research & Writing" },
+  "contact": { "label": "Get in touch", "title": "Let's work together", "name": "Your name", "email": "Your email", "message": "Your message", "send": "Send message", "success": "Message sent!", "location": "Istanbul, Türkiye" }
+}
