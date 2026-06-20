@@ -14,6 +14,23 @@ export default function Hero() {
       <ParticleHero />
       <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, transparent 40%, #FFFFFF)' }} />
       <div style={{ position: 'relative', zIndex: 10, maxWidth: '900px', margin: '0 auto', padding: '8rem 2rem 4rem', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
+
+        {/* Profile Photo */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.7 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.1, type: 'spring', stiffness: 180, damping: 18 }}
+          style={{ marginBottom: '1.8rem' }}
+        >
+          <img
+            src="/avatar.png"
+            alt="Reza Kermanian"
+            width={130}
+            height={130}
+            style={{ display: 'block' }}
+          />
+        </motion.div>
+
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}
           style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '6px 16px', borderRadius: '999px', border: '1px solid rgba(8,145,178,0.3)', background: 'rgba(8,145,178,0.06)', marginBottom: '2rem' }}>
           <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#0891B2' }} />
@@ -37,9 +54,9 @@ export default function Hero() {
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.9 }}
           style={{ display: 'flex', gap: '12px' }}>
           {[
-            { icon: GithubIcon,   href: 'https://github.com/rezakermanian78',        label: 'GitHub'   },
-            { icon: LinkedinIcon, href: 'https://linkedin.com/in/rezakermanian',     label: 'LinkedIn' },
-            { icon: Mail,         href: 'mailto:reza.kermanian1378@gmail.com',        label: 'Email'    },
+            { icon: GithubIcon,   href: 'https://github.com/rezakermanian78',    label: 'GitHub'   },
+            { icon: LinkedinIcon, href: 'https://linkedin.com/in/rezakermanian', label: 'LinkedIn' },
+            { icon: Mail,         href: 'mailto:reza.kermanian1378@gmail.com',   label: 'Email'    },
           ].map(({ icon: Icon, href, label }) => (
             <a key={label} href={href} target="_blank" rel="noopener noreferrer" aria-label={label}
               style={{ width: '42px', height: '42px', borderRadius: '50%', border: '1px solid #E2E8F0', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#475569', textDecoration: 'none' }}>
