@@ -124,5 +124,5 @@ export default function ParticleHero() {
     };
   }, []);
 
-  return <div ref={mountRef} className="absolute inset-0 w-full h-full" />;
+  return <div ref={mountRef} className="absolute inset-0 w-full h-full" style={{ pointerEvents: "none" }} />;
 }
