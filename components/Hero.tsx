@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <section id="home" style={{ position: 'relative', minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
       <ParticleHero />
-      <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, transparent 40%, #FFFFFF)' }} />
+      <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, transparent 40%, #FFFFFF)', pointerEvents: 'none' }} />
       <div style={{ position: 'relative', zIndex: 10, maxWidth: '900px', margin: '0 auto', padding: '8rem 2rem 4rem', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
 
         {/* Profile Photo */}
