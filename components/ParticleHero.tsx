@@ -19,6 +19,7 @@ export default function ParticleHero() {
     renderer.setSize(W, H);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     renderer.setClearColor(0x000000, 0);
+    renderer.domElement.style.pointerEvents = 'none';
     mount.appendChild(renderer.domElement);
 
     // ---- Circular sprite (fixes square particles) ----
