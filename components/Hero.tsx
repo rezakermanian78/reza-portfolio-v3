@@ -10,7 +10,7 @@ const ParticleHero = dynamic(() => import('./ParticleHero'), { ssr: false });
 export default function Hero() {
   const t = useTranslations('hero');
   return (
-    <section id="home" style={{ position: 'relative', minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
+    <section id="home" style={{ position: 'relative', minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
       <ParticleHero />
       <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, transparent 40%, #FFFFFF)', pointerEvents: 'none' }} />
       <div style={{ position: 'relative', zIndex: 10, maxWidth: '900px', margin: '0 auto', padding: '8rem 2rem 4rem', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
